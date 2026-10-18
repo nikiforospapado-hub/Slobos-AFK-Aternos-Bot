@@ -2083,3 +2083,13 @@ bot.on('physicTick', async () => {
     bot._client.write('tick_end', {});
   }
 });
+
+  setInterval(() => {
+    bot.chat("Ο Κλέαρχος θέλει την Αλίκη");
+  }, 300000); 
+});
+
+ setInterval(() => {
+    bot.chat("Χάρης και Σακκή για πάντα μαζί");
+  }, 600000); 
+});
