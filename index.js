@@ -2091,7 +2091,7 @@ bot.on('physicTick', async () => {
   }, 300000);
  setInterval(() => {
     bot.chat("Χάρης και Σακκή για πάντα μαζί");
-  }, 600000); 
+  }, 450000); 
 });
 
 bot.on('playerJoined', (player) => {
