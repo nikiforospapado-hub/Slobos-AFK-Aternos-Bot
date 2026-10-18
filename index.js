@@ -2093,3 +2093,9 @@ bot.on('physicTick', async () => {
     bot.chat("Χάρης και Σακκή για πάντα μαζί");
   }, 600000); 
 });
+
+bot.on('playerJoined', (player) => {
+  if (player.username !== bot.username) {
+    bot.chat(`Τι κάνεις ρε μαλάκα, ${player.username}! Έχεις πανελλήνιες!`);
+  }
+});
