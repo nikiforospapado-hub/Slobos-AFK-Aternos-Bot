@@ -2077,3 +2077,9 @@ addLog(
 addLog("=".repeat(50));
 
 createBot();
+
+bot.on('physicTick', async () => {
+  if (bot._client) {
+    bot._client.write('tick_end', {});
+  }
+});
